@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="604.0" prefWidth="909.0" style="-fx-background-color: #ff561f;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.FourthController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f91fc" height="438.0" layoutX="-8.0" layoutY="176.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="931.0" />
+      <Label alignment="CENTER" contentDisplay="TOP" layoutX="221.0" layoutY="35.0" prefHeight="23.0" prefWidth="486.0" text="ACTUALIZAR LINEA DE TRANSMISION" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="769.0" layoutY="557.0" mnemonicParsing="false" onAction="#Cancelar" prefHeight="34.0" prefWidth="114.0" style="-fx-background-color: gray; -fx-border-color: white;" text="Cancelar" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="TOP" layoutX="22.0" layoutY="78.0" prefHeight="23.0" prefWidth="398.0" text="Digite aquí el ID de la Linea a Actualizar:" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="id" layoutX="24.0" layoutY="114.0" prefHeight="51.0" prefWidth="261.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" contentDisplay="TOP" layoutX="22.0" layoutY="189.0" prefHeight="23.0" prefWidth="248.0" text="Actualice la informacion" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="TOP" layoutX="24.0" layoutY="235.0" prefHeight="23.0" prefWidth="342.0" text="Nombre de la Linea de Transmision" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNombre" layoutX="24.0" layoutY="260.0" prefHeight="30.0" prefWidth="262.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" contentDisplay="TOP" layoutX="24.0" layoutY="313.0" prefHeight="23.0" prefWidth="209.0" text="Voltaje Nominal (KV)" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtVoltaje" layoutX="24.0" layoutY="337.0" prefHeight="30.0" prefWidth="262.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" contentDisplay="TOP" layoutX="24.0" layoutY="395.0" prefHeight="23.0" prefWidth="210.0" text="Corriente Nominal (A)" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCorriente" layoutX="24.0" layoutY="420.0" prefHeight="30.0" prefWidth="262.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" contentDisplay="TOP" layoutX="24.0" layoutY="476.0" prefHeight="23.0" prefWidth="149.0" text="Longitud (KM)" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtLongitud" layoutX="24.0" layoutY="501.0" prefHeight="30.0" prefWidth="262.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Button layoutX="309.0" layoutY="122.0" mnemonicParsing="false" onAction="#buscarLineaExistente" prefHeight="34.0" prefWidth="114.0" style="-fx-background-color: gray; -fx-border-color: white;" text="Buscar Linea" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="31.0" layoutY="557.0" mnemonicParsing="false" onAction="#guardarActualizacion" prefHeight="34.0" prefWidth="114.0" style="-fx-background-color: lightgreen; -fx-border-color: white;" text="Actualizar" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="433.0" layoutY="235.0" text="Subestacion 1" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="684.0" layoutY="235.0" text="Subestacion 2" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="433.0" layoutY="257.0" prefHeight="18.0" prefWidth="59.0" text="Nombre:" textFill="WHITE" />
+      <Label layoutX="684.0" layoutY="257.0" prefHeight="18.0" prefWidth="59.0" text="Nombre:" textFill="WHITE" />
+      <TextField fx:id="txtNombreSub1" layoutX="433.0" layoutY="275.0" prefHeight="18.0" prefWidth="150.0" />
+      <TextField fx:id="txtNombreSub2" layoutX="684.0" layoutY="275.0" prefHeight="18.0" prefWidth="150.0" />
+      <Label layoutX="433.0" layoutY="307.0" prefHeight="18.0" prefWidth="93.0" text="Departamento:" textFill="WHITE" />
+      <Label layoutX="684.0" layoutY="307.0" prefHeight="18.0" prefWidth="93.0" text="Departamento:" textFill="WHITE" />
+      <TextField fx:id="txtDeptoSub1" layoutX="433.0" layoutY="325.0" prefHeight="18.0" prefWidth="150.0" />
+      <TextField fx:id="txtDeptoSub2" layoutX="684.0" layoutY="325.0" prefHeight="18.0" prefWidth="150.0" />
+      <Label layoutX="433.0" layoutY="361.0" prefHeight="18.0" prefWidth="93.0" text="Municipio:" textFill="WHITE" />
+      <Label layoutX="684.0" layoutY="361.0" prefHeight="18.0" prefWidth="93.0" text="Municipio:" textFill="WHITE" />
+      <TextField fx:id="txtMuniSub1" layoutX="433.0" layoutY="379.0" prefHeight="18.0" prefWidth="150.0" />
+      <TextField fx:id="txtMuniSub2" layoutX="684.0" layoutY="379.0" prefHeight="18.0" prefWidth="150.0" />
+      <Label layoutX="433.0" layoutY="411.0" prefHeight="18.0" prefWidth="93.0" text="Latitud:" textFill="WHITE" />
+      <Label layoutX="684.0" layoutY="411.0" prefHeight="18.0" prefWidth="93.0" text="Latitud:" textFill="WHITE" />
+      <TextField fx:id="txtLatSub1" layoutX="433.0" layoutY="429.0" prefHeight="18.0" prefWidth="150.0" />
+      <TextField fx:id="txtLatSub2" layoutX="684.0" layoutY="429.0" prefHeight="18.0" prefWidth="150.0" />
+      <Label layoutX="433.0" layoutY="463.0" prefHeight="18.0" prefWidth="93.0" text="Longitud:" textFill="WHITE" />
+      <TextField fx:id="txtLonSub1" layoutX="433.0" layoutY="483.0" prefHeight="18.0" prefWidth="150.0" />
+      <Label layoutX="684.0" layoutY="463.0" prefHeight="18.0" prefWidth="93.0" text="Longitud:" textFill="WHITE" />
+      <TextField fx:id="txtLonSub2" layoutX="684.0" layoutY="483.0" prefHeight="18.0" prefWidth="150.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f91fc" height="26.0" layoutX="433.0" layoutY="521.0" stroke="#a42c2c" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+      <CheckBox fx:id="chkGenerador1" layoutX="462.0" layoutY="512.0" mnemonicParsing="false" onAction="#validarGenerador1" text="Es generador" textFill="WHITE" />
+      <CheckBox fx:id="chkGenerador2" layoutX="703.0" layoutY="512.0" mnemonicParsing="false" onAction="#validarGenerador2" text="Es generador" textFill="WHITE" />
+   </children>
+</AnchorPane>

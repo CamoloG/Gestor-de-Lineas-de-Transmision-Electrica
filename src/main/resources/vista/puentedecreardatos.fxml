@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="604.0" prefWidth="909.0" spacing="40.0" style="-fx-background-color: #1f91fc;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.PuenteDeCrearDatos">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Label text="Escoja una opcion" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="47.0" />
+         </font>
+      </Label>
+      <Button mnemonicParsing="false" onAction="#creardesdecero" prefHeight="158.0" prefWidth="316.0" style="-fx-background-color: gray; -fx-border-color: white; -fx-border-width: 6;" text="Crear Linea de transmision y Subestaciones" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font></Button>
+      <Button layoutX="30.0" layoutY="88.0" mnemonicParsing="false" onAction="#crearconsubs" prefHeight="158.0" prefWidth="412.0" style="-fx-background-color: gray; -fx-border-color: white; -fx-border-width: 6;" text="Crear Linea de transmision con Subestaciones ya creadas" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Regular" size="14.0" />
+         </font></Button>
+      <Button mnemonicParsing="false" onAction="#Cancelar" prefHeight="34.0" prefWidth="114.0" style="-fx-background-color: gray; -fx-border-color: white;" text="Cancelar" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</VBox>
